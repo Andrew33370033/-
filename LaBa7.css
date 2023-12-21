@@ -21,7 +21,7 @@ border-radius: 25px;
  .header, .footer  {
     text-align: center;
     padding: 10px;
-    background-image: url(background.jpg) 
+    background-image: url(background.jpg);
     
 }
 .logo {
@@ -103,107 +103,50 @@ body {
     color: #333;
   }
   
-  ul, li {
-    margin:0;
-    padding:0;
-    list-style-type:none;  
-}
 
 body {
-  /* Убираю отступы. */
-  margin:0px;
-  /* Убираю еще отступы. */
-  padding:0px;
-  /* Задаю шрифт. */
-  font: 14px 'Verdana';
-    width: 100%;
-}
-ul {
-  /* Убираю маркеры у списка*/
-  list-style: none;
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю отступы. */
-  margin:0px;
-  /* Убираю еще отступы! */
-  padding:0px;
-}
-ul:after {
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю выравнивание. */
-  float: none;
-  content: ' ';
-  clear: both;
-}
-ul.mmenuu > li {
-  /* Задаю выравнивание и позиционирование. */
-  float: left;
-  /* Считаем координаты относительно исходного места*/
-  position: relative;
-  width: 100%;
-}
-ul.mmenuu > li > a {
-  /* Делаю элементы блочными: */
-  display: block;
-  /* Задаю белый цвет. */
-  color: #fff;
-  /* Задаю отступ 10px. */
-  padding: 10px;
-  /* Убираю форматирование*/
-  text-decoration: none;
-  /* Задаю цвет. */
-  background-color: #930fda;
-}
-ul.mmenuu > li > a:hover {
-  /* Задаю цвет при наведении. */
-  background-color: #0f82da;
-}
-ul.ssubmenuu {
-  position: absolute;
-  width: 100%;
-  top: 37px;
-  left:0px;
-  /* Делаю субменю скрытыми. */
-  display: none;
-  /* Цвет — белый. */
-  background-color: white;
-}
-ul.ssubmenuu > li {
-  /* Блочное расположение элементов*/
-  display: block;
+  margin: 0;
   
 }
-ul.ssubmenuu > li > a {
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю форматирование*/
+header {
+  background:url(про.png);
+  text-align: center;
+}
+header a {
   text-decoration: none;
-  /* Задаю отступ. */
-  padding: 10px;
-  /* Задаю цвет. */
-  color: #ffffff;
-  /* Еще цвет. */
-  background-color: #0f82da;
-  width: 100%;
-}
-ul.ssubmenuu > li > a:hover {
-  /* Цвет бэкграунда при наведении. */
-  background-color: #eb9316;
-  /* Задаю подчеркивание*/
-  text-decoration: underline;
-  width: 100%;
-}
-ul.mmenuu > li:hover > ul.ssubmenuu {
-  /* Делаю элементы блочными. */
+  outline: none;
   display: block;
+  transition: .3s ease-in-out;
 }
-.mmenuu
-{
-  width: 100%;
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #c3d726;
+  padding: 15px 30px;
 }
 
-p3 {
+.footer {
   color: #c31f1f;
 }
 
@@ -251,3 +194,4 @@ p3 {
  opacity: 0;
 }
 }
+ 
